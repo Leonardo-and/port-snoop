@@ -1,19 +1,42 @@
 {
   "name": "port-snoop",
   "version": "1.0.0",
-  "description": "Simple port scanner CLI for Node.js",
+  "description": "Simple port scanner CLI and API for Node.js",
   "main": "dist/index.js",
+  "bin": {
+    "port-snoop": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
-    "start": "tsx src/cli.ts"
+    "start": "node dist/cli.js",
+    "dev": "tsx watch src/cli.ts",
+    "build": "tsc"
   },
   "keywords": [
     "nmap",
     "nodejs",
     "port",
-    "scan"
+    "scan",
+    "security",
+    "network",
+    "cli"
   ],
-  "author": "Leonardo-and",
+  "author": {
+    "name": "Leonardo-and",
+    "url": "https://github.com/Leonardo-and"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Leonardo-and/port-snoop.git"
+  },
   "license": "ISC",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "devDependencies": {
     "@rocketseat/eslint-config": "^3.0.12",
     "@types/node": "^22.8.1",

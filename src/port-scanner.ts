@@ -3,7 +3,7 @@ import { isIPv4, Socket } from 'node:net'
 import dns from 'node:dns/promises'
 import { logger } from './services/logger'
 import { performance } from 'perf_hooks'
-import { portSnoopBanner } from './constants'
+import { portSnoopBanner } from './banner'
 import { table } from 'table'
 
 type SinglePort = number
